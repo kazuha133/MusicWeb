@@ -133,9 +133,10 @@
                 </div>
 
                 <div class="search-bar">
-                    <input type="text" placeholder="Search for artists, songs, playlists...">
-                    <button>🔎</button>
+                    <input id="music-search-input" type="text" placeholder="Search for artists, songs, playlists..." aria-label="Search songs and artists">
+                    <button type="button" id="music-search-btn" aria-label="Search">🔎</button>
                 </div>
+                <div id="search-results" class="search-results" aria-live="polite"></div>
 
                 <div class="categories-section">
                     <h3>Categories</h3>
@@ -206,7 +207,7 @@
                 </div>
 
                 <div class="action-buttons">
-                    <button class="btn-primary">+ Create Playlist</button>
+                    <button class="btn-primary" id="create-playlist-btn" type="button">+ Create Playlist</button>
                 </div>
 
                 <div class="playlists-container">
@@ -457,6 +458,32 @@
         </main>
     </div>
 
+    <section class="player-bar" aria-label="Music player">
+        <div class="player-track-meta">
+            <div class="player-art" id="player-art" aria-hidden="true"></div>
+            <div class="player-text">
+                <p id="now-playing-title">Not Playing</p>
+                <p id="now-playing-subtitle">Select a track to start</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <div class="player-buttons">
+                <button type="button" class="player-btn" id="prev-track-btn" aria-label="Previous track">⏮</button>
+                <button type="button" class="player-btn primary" id="play-pause-btn" aria-label="Play or pause">▶️</button>
+                <button type="button" class="player-btn" id="next-track-btn" aria-label="Next track">⏭</button>
+                <button type="button" class="player-btn" id="favorite-track-btn" aria-label="Toggle favorite">🤍</button>
+            </div>
+            <div class="progress-wrapper">
+                <span id="current-time" class="time-label">0:00</span>
+                <input type="range" id="progress-bar" min="0" max="100" value="0" aria-label="Track progress">
+                <span id="total-time" class="time-label">0:00</span>
+            </div>
+        </div>
+        <div class="player-volume">
+            <label for="volume-control">🔊</label>
+            <input type="range" id="volume-control" min="0" max="100" value="80" aria-label="Volume control">
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
