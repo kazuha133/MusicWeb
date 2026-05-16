@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicWeb - Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="desired_front_end/css/main.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="settings">
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">♪</div>
+                <h1>MusicWeb</h1>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item" data-page="home">
+                    <span class="icon">🏠</span>
+                    <span class="label">Home</span>
+                </a>
+                <a href="browse.html" class="nav-item" data-page="browse">
+                    <span class="icon">🔍</span>
+                    <span class="label">Browse</span>
+                </a>
+                <a href="playlists.html" class="nav-item" data-page="playlists">
+                    <span class="icon">📝</span>
+                    <span class="label">Playlists</span>
+                </a>
+                <a href="favorites.html" class="nav-item" data-page="favorites">
+                    <span class="icon">❤️</span>
+                    <span class="label">Favorites</span>
+                </a>
+                <a href="settings.html" class="nav-item" data-page="settings">
+                    <span class="icon">⚙️</span>
+                    <span class="label">Settings</span>
+                </a>
+                <a href="report.html" class="nav-item" data-page="report">
+                    <span class="icon">📄</span>
+                    <span class="label">Report</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>© 2026 MusicWeb</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="discover-banner" aria-label="Discover">
+                <div class="discover-search-shell">
+                    <span>Search For Musics, Artists, ...</span>
+                </div>
+                <div class="discover-links">
+                    <a href="browse.html" class="discover-link">Browse Music</a>
+                    <a href="favorites.html" class="discover-link">Liked Songs</a>
+                    <a href="report.html" class="discover-link">Project Report</a>
+                </div>
+            </section>
+
+            <section class="page-header">
+                <h2>Settings ⚙️</h2>
+                <p>Customize your MusicWeb experience.</p>
+            </section>
+
+            <div class="settings-container">
+
+                <!-- Account Info -->
+                <div class="settings-section">
+                    <h3>👤 Account Information</h3>
+                    <div class="settings-item">
+                        <label for="settings-username">Display Name</label>
+                        <input type="text" id="settings-username" value="Music Lover" placeholder="Your display name">
+                    </div>
+                    <div class="settings-item">
+                        <label for="settings-email">Email Address</label>
+                        <input type="email" id="settings-email" value="user@musicweb.com" disabled>
+                        <p class="setting-desc">Email cannot be changed from this page.</p>
+                    </div>
+                </div>
+
+                <!-- Audio Quality -->
+                <div class="settings-section">
+                    <h3>🎵 Audio Quality</h3>
+                    <div class="settings-item">
+                        <label>Streaming Quality</label>
+                        <div class="radio-group" role="radiogroup" aria-label="Streaming quality options">
+                            <label class="radio">
+                                <input type="radio" name="quality" value="128"> 128 kbps – Data Saver
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="quality" value="256" checked> 256 kbps – Standard
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="quality" value="320"> 320 kbps – High Quality
+                            </label>
+                        </div>
+                        <p class="setting-desc">Higher quality uses more data.</p>
+                    </div>
+                </div>
+
+                <!-- Notifications -->
+                <div class="settings-section">
+                    <h3>🔔 Notifications</h3>
+                    <div class="settings-item">
+                        <label>New Releases</label>
+                        <label class="toggle-switch" aria-label="Toggle new release notifications">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <p class="setting-desc">Get notified when artists you follow release new music.</p>
+                    </div>
+                    <div class="settings-item">
+                        <label>Playlist Updates</label>
+                        <label class="toggle-switch" aria-label="Toggle playlist update notifications">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <p class="setting-desc">Be alerted when your followed playlists are updated.</p>
+                    </div>
+                    <div class="settings-item">
+                        <label>Weekly Recommendations</label>
+                        <label class="toggle-switch" aria-label="Toggle weekly recommendation notifications">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <p class="setting-desc">Receive personalized weekly music recommendations.</p>
+                    </div>
+                </div>
+
+                <!-- Display & Theme -->
+                <div class="settings-section">
+                    <h3>🎨 Display</h3>
+                    <div class="settings-item">
+                        <label>Show Song Lyrics</label>
+                        <label class="toggle-switch" aria-label="Toggle show lyrics">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <p class="setting-desc">Display lyrics while a track is playing.</p>
+                    </div>
+                    <div class="settings-item">
+                        <label>Animations &amp; Transitions</label>
+                        <label class="toggle-switch" aria-label="Toggle animations">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <p class="setting-desc">Enable smooth UI animations and page transitions.</p>
+                    </div>
+                    <div class="settings-item">
+                        <label>Autoplay Next Track</label>
+                        <label class="toggle-switch" aria-label="Toggle autoplay">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                        <p class="setting-desc">Automatically play the next track when current one ends.</p>
+                    </div>
+                </div>
+
+                <!-- Keyboard Shortcuts -->
+                <div class="settings-section">
+                    <h3>⌨️ Keyboard Shortcuts</h3>
+                    <div class="settings-item">
+                        <div class="shortcuts-grid">
+                            <div class="shortcut-row">
+                                <kbd>Space</kbd><span>Play / Pause</span>
+                            </div>
+                            <div class="shortcut-row">
+                                <kbd>N</kbd><span>Next Track</span>
+                            </div>
+                            <div class="shortcut-row">
+                                <kbd>P</kbd><span>Previous Track</span>
+                            </div>
+                            <div class="shortcut-row">
+                                <kbd>F</kbd><span>Toggle Favorite</span>
+                            </div>
+                            <div class="shortcut-row">
+                                <kbd>Alt</kbd> + <kbd>→</kbd><span>Next Page</span>
+                            </div>
+                            <div class="shortcut-row">
+                                <kbd>Alt</kbd> + <kbd>←</kbd><span>Previous Page</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Danger Zone -->
+                <div class="settings-section danger-section">
+                    <h3>⚠️ Data Management</h3>
+                    <div class="settings-item">
+                        <p class="setting-desc" style="margin-bottom: 15px;">These actions are irreversible. Please proceed with caution.</p>
+                        <button type="button" class="btn-danger">Reset Settings</button>
+                        <button type="button" class="btn-danger">Clear Cache &amp; Data</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <section class="player-bar" aria-label="Music player">
+        <div class="player-track-meta">
+            <div class="player-art" id="player-art" aria-hidden="true"></div>
+            <div class="player-text">
+                <p id="now-playing-title">Not Playing</p>
+                <p id="now-playing-subtitle">Select a track to start</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <div class="player-buttons">
+                <button type="button" class="player-btn" id="prev-track-btn" aria-label="Previous track">⏮</button>
+                <button type="button" class="player-btn primary" id="play-pause-btn" aria-label="Play or pause">▶️</button>
+                <button type="button" class="player-btn" id="next-track-btn" aria-label="Next track">⏭</button>
+                <button type="button" class="player-btn" id="favorite-track-btn" aria-label="Toggle favorite">🤍</button>
+            </div>
+            <div class="progress-wrapper">
+                <span id="current-time" class="time-label">0:00</span>
+                <input type="range" id="progress-bar" min="0" max="100" value="0" aria-label="Track progress">
+                <span id="total-time" class="time-label">0:00</span>
+            </div>
+        </div>
+        <div class="player-volume">
+            <label for="volume-control">🔊</label>
+            <input type="range" id="volume-control" min="0" max="100" value="80" aria-label="Volume control">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
