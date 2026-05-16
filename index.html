@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusicWeb - Your Music, Your Way</title>
+    <title>MusicWeb - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,33 +12,36 @@
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="logo">
                 <div class="logo-icon">♪</div>
                 <h1>MusicWeb</h1>
             </div>
-            
+
             <nav class="nav-menu">
-                <a href="#" class="nav-item active" data-page="home">
+                <a href="index.html" class="nav-item" data-page="home">
                     <span class="icon">🏠</span>
                     <span class="label">Home</span>
                 </a>
-                <a href="#" class="nav-item" data-page="browse">
+                <a href="browse.html" class="nav-item" data-page="browse">
                     <span class="icon">🔍</span>
                     <span class="label">Browse</span>
                 </a>
-                <a href="#" class="nav-item" data-page="playlists">
+                <a href="playlists.html" class="nav-item" data-page="playlists">
                     <span class="icon">📝</span>
                     <span class="label">Playlists</span>
                 </a>
-                <a href="#" class="nav-item" data-page="favorites">
+                <a href="favorites.html" class="nav-item" data-page="favorites">
                     <span class="icon">❤️</span>
                     <span class="label">Favorites</span>
                 </a>
-                <a href="#" class="nav-item" data-page="settings">
+                <a href="settings.html" class="nav-item" data-page="settings">
                     <span class="icon">⚙️</span>
                     <span class="label">Settings</span>
+                </a>
+                <a href="report.html" class="nav-item" data-page="report">
+                    <span class="icon">📄</span>
+                    <span class="label">Report</span>
                 </a>
             </nav>
 
@@ -47,435 +50,146 @@
             </div>
         </aside>
 
-        <!-- Main Content Area -->
         <main class="main-content">
             <section class="discover-banner" aria-label="Discover">
                 <div class="discover-search-shell">
                     <span>Search For Musics, Artists, ...</span>
                 </div>
                 <div class="discover-links">
-                    <a href="#" class="discover-link">About Us</a>
-                    <a href="#" class="discover-link">Contact</a>
-                    <a href="#" class="discover-link">Premium</a>
+                    <a href="report.html" class="discover-link">Project Report</a>
+                    <a href="settings.html" class="discover-link">Premium</a>
+                    <a href="browse.html" class="discover-link">New Releases</a>
                 </div>
             </section>
 
-            <!-- HOME PAGE -->
-            <section id="home" class="page active">
-                <div class="hero-section">
+            <section class="hero-section home-hero">
+                <div class="hero-content">
+                    <p class="hero-tag">Your sound, your world</p>
                     <h2>All the Best Songs in One Place</h2>
                     <p>
                         On MusicWeb, you can access an amazing collection of popular and new songs.
                         Stream your favorite tracks in high quality and enjoy without interruptions.
                     </p>
-                </div>
-
-                <div class="page-header">
-                    <h2>Welcome Back! 🎵</h2>
-                    <p>Let's find your next favorite track</p>
-                </div>
-
-                <div class="featured-section">
-                    <h3>Featured Playlists</h3>
-                    <div class="playlist-grid">
-                        <div class="playlist-card">
-                            <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                            <h4>Chill Vibes</h4>
-                            <p>45 songs • 3 hours</p>
-                        </div>
-                        <div class="playlist-card">
-                            <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                            <h4>Workout Energy</h4>
-                            <p>52 songs • 4 hours</p>
-                        </div>
-                        <div class="playlist-card">
-                            <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                            <h4>Road Trip</h4>
-                            <p>38 songs • 3.5 hours</p>
-                        </div>
-                        <div class="playlist-card">
-                            <div class="card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
-                            <h4>Late Night Sessions</h4>
-                            <p>61 songs • 5 hours</p>
-                        </div>
+                    <div class="hero-actions">
+                        <button class="btn-primary" type="button">Start Listening</button>
+                        <button class="btn-secondary" type="button">View Charts</button>
                     </div>
                 </div>
+                <div class="hero-visual" aria-hidden="true"></div>
+            </section>
 
-                <div class="trending-section">
-                    <h3>Trending Now</h3>
-                    <div class="track-list">
-                        <div class="track-item">
-                            <div class="track-number">1</div>
-                            <div class="track-info">
-                                <p class="track-name">Midnight Dreams</p>
-                                <p class="artist-name">Luna Echo</p>
-                            </div>
-                            <span class="duration">3:24</span>
-                        </div>
-                        <div class="track-item">
-                            <div class="track-number">2</div>
-                            <div class="track-info">
-                                <p class="track-name">Sunset Memories</p>
-                                <p class="artist-name">Golden Hour</p>
-                            </div>
-                            <span class="duration">4:12</span>
-                        </div>
-                        <div class="track-item">
-                            <div class="track-number">3</div>
-                            <div class="track-info">
-                                <p class="track-name">Electric Paradise</p>
-                                <p class="artist-name">Neon Lights</p>
-                            </div>
-                            <span class="duration">3:45</span>
-                        </div>
-                        <div class="track-item">
-                            <div class="track-number">4</div>
-                            <div class="track-info">
-                                <p class="track-name">Ocean Waves</p>
-                                <p class="artist-name">Blue Horizon</p>
-                            </div>
-                            <span class="duration">5:03</span>
-                        </div>
-                        <div class="track-item">
-                            <div class="track-number">5</div>
-                            <div class="track-info">
-                                <p class="track-name">Starlight Journey</p>
-                                <p class="artist-name">Cosmic Vibes</p>
-                            </div>
-                            <span class="duration">4:28</span>
-                        </div>
+            <section class="stats-row" aria-label="Highlights">
+                <article class="stat-card">
+                    <h3>24K+</h3>
+                    <p>Songs Ready</p>
+                </article>
+                <article class="stat-card">
+                    <h3>3.2K</h3>
+                    <p>Curated Playlists</p>
+                </article>
+                <article class="stat-card">
+                    <h3>120+</h3>
+                    <p>Top Artists</p>
+                </article>
+                <article class="stat-card">
+                    <h3>4K</h3>
+                    <p>Daily Streams</p>
+                </article>
+            </section>
+
+            <section class="featured-section">
+                <h3>Featured Playlists</h3>
+                <div class="playlist-grid">
+                    <div class="playlist-card">
+                        <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <h4>Chill Vibes</h4>
+                        <p>45 songs • 3 hours</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <h4>Workout Energy</h4>
+                        <p>52 songs • 4 hours</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <h4>Road Trip</h4>
+                        <p>38 songs • 3.5 hours</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        <h4>Late Night Sessions</h4>
+                        <p>61 songs • 5 hours</p>
                     </div>
                 </div>
             </section>
 
-            <!-- BROWSE PAGE -->
-            <section id="browse" class="page">
-                <div class="page-header">
-                    <h2>Browse Music 🔍</h2>
-                    <p>Explore music across different genres</p>
-                </div>
-
-                <div class="search-bar">
-                    <input id="music-search-input" type="text" placeholder="Search for artists, songs, playlists..." aria-label="Search songs and artists">
-                    <button type="button" id="music-search-btn" aria-label="Search">🔎</button>
-                </div>
-                <div id="search-results" class="search-results" aria-live="polite"></div>
-
-                <div class="categories-section">
-                    <h3>Categories</h3>
-                    <div class="categories-grid">
-                        <div class="category-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <span class="category-icon">🎸</span>
-                            <p>Rock</p>
+            <section class="trending-section">
+                <h3>Trending Now</h3>
+                <div class="track-list">
+                    <div class="track-item">
+                        <div class="track-number">1</div>
+                        <div class="track-info">
+                            <p class="track-name">Midnight Dreams</p>
+                            <p class="artist-name">Luna Echo</p>
                         </div>
-                        <div class="category-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <span class="category-icon">🎹</span>
-                            <p>Classical</p>
-                        </div>
-                        <div class="category-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <span class="category-icon">🎤</span>
-                            <p>Pop</p>
-                        </div>
-                        <div class="category-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                            <span class="category-icon">🎺</span>
-                            <p>Jazz</p>
-                        </div>
-                        <div class="category-card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                            <span class="category-icon">🎧</span>
-                            <p>Electronic</p>
-                        </div>
-                        <div class="category-card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                            <span class="category-icon">🎤</span>
-                            <p>Hip-Hop</p>
-                        </div>
+                        <span class="duration">3:24</span>
                     </div>
-                </div>
-
-                <div class="new-releases-section">
-                    <h3>New Releases</h3>
-                    <div class="album-grid">
-                        <div class="album-card">
-                            <div class="album-art" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                            <h4>Neon Nights</h4>
-                            <p>Synthwave Collective</p>
-                            <p class="release-date">Released May 2026</p>
+                    <div class="track-item">
+                        <div class="track-number">2</div>
+                        <div class="track-info">
+                            <p class="track-name">Sunset Memories</p>
+                            <p class="artist-name">Golden Hour</p>
                         </div>
-                        <div class="album-card">
-                            <div class="album-art" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                            <h4>Urban Pulse</h4>
-                            <p>City Lights</p>
-                            <p class="release-date">Released May 2026</p>
+                        <span class="duration">4:12</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">3</div>
+                        <div class="track-info">
+                            <p class="track-name">Electric Paradise</p>
+                            <p class="artist-name">Neon Lights</p>
                         </div>
-                        <div class="album-card">
-                            <div class="album-art" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                            <h4>Cosmic Waves</h4>
-                            <p>Space Echo</p>
-                            <p class="release-date">Released May 2026</p>
+                        <span class="duration">3:45</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">4</div>
+                        <div class="track-info">
+                            <p class="track-name">Ocean Waves</p>
+                            <p class="artist-name">Blue Horizon</p>
                         </div>
-                        <div class="album-card">
-                            <div class="album-art" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
-                            <h4>Golden Hour</h4>
-                            <p>Sunset Dreams</p>
-                            <p class="release-date">Released April 2026</p>
+                        <span class="duration">5:03</span>
+                    </div>
+                    <div class="track-item">
+                        <div class="track-number">5</div>
+                        <div class="track-info">
+                            <p class="track-name">Starlight Journey</p>
+                            <p class="artist-name">Cosmic Vibes</p>
                         </div>
+                        <span class="duration">4:28</span>
                     </div>
                 </div>
             </section>
 
-            <!-- PLAYLISTS PAGE -->
-            <section id="playlists" class="page">
-                <div class="page-header">
-                    <h2>Your Playlists 📝</h2>
-                    <p>Manage your favorite collections</p>
-                </div>
-
-                <div class="action-buttons">
-                    <button class="btn-primary" id="create-playlist-btn" type="button">+ Create Playlist</button>
-                </div>
-
-                <div class="playlists-container">
-                    <div class="playlist-detail-card">
-                        <div class="playlist-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <h3>Chill Vibes</h3>
+            <section class="artist-section">
+                <h3>Top Artists</h3>
+                <div class="artist-grid">
+                    <article class="artist-card" style="background-image: url('desired_front_end/images/v431_450.png');">
+                        <div class="artist-overlay">
+                            <h4>Nova Bloom</h4>
+                            <p>Electro Pop</p>
                         </div>
-                        <div class="playlist-stats">
-                            <span>📀 45 songs</span>
-                            <span>⏱️ 3h 24min</span>
-                            <span>👤 123 followers</span>
+                    </article>
+                    <article class="artist-card" style="background-image: url('desired_front_end/images/v434_152.png');">
+                        <div class="artist-overlay">
+                            <h4>Skyline</h4>
+                            <p>Alt Rock</p>
                         </div>
-                        <div class="playlist-actions">
-                            <button class="btn-small">Edit</button>
-                            <button class="btn-small danger">Delete</button>
+                    </article>
+                    <article class="artist-card" style="background-image: url('desired_front_end/images/v12_387.png');">
+                        <div class="artist-overlay">
+                            <h4>Amber Keys</h4>
+                            <p>Lo-Fi</p>
                         </div>
-                    </div>
-
-                    <div class="playlist-detail-card">
-                        <div class="playlist-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <h3>Workout Energy</h3>
-                        </div>
-                        <div class="playlist-stats">
-                            <span>📀 52 songs</span>
-                            <span>⏱️ 4h 12min</span>
-                            <span>👤 89 followers</span>
-                        </div>
-                        <div class="playlist-actions">
-                            <button class="btn-small">Edit</button>
-                            <button class="btn-small danger">Delete</button>
-                        </div>
-                    </div>
-
-                    <div class="playlist-detail-card">
-                        <div class="playlist-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                            <h3>Road Trip</h3>
-                        </div>
-                        <div class="playlist-stats">
-                            <span>📀 38 songs</span>
-                            <span>⏱️ 3h 45min</span>
-                            <span>👤 156 followers</span>
-                        </div>
-                        <div class="playlist-actions">
-                            <button class="btn-small">Edit</button>
-                            <button class="btn-small danger">Delete</button>
-                        </div>
-                    </div>
-
-                    <div class="playlist-detail-card">
-                        <div class="playlist-header" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                            <h3>Late Night Sessions</h3>
-                        </div>
-                        <div class="playlist-stats">
-                            <span>📀 61 songs</span>
-                            <span>⏱️ 5h 08min</span>
-                            <span>👤 203 followers</span>
-                        </div>
-                        <div class="playlist-actions">
-                            <button class="btn-small">Edit</button>
-                            <button class="btn-small danger">Delete</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- FAVORITES PAGE -->
-            <section id="favorites" class="page">
-                <div class="page-header">
-                    <h2>Your Favorites ❤️</h2>
-                    <p>All your liked songs in one place</p>
-                </div>
-
-                <div class="favorites-stats">
-                    <div class="stat-box">
-                        <span class="stat-number">187</span>
-                        <span class="stat-label">Total Tracks</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">14h 32m</span>
-                        <span class="stat-label">Total Duration</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">42</span>
-                        <span class="stat-label">Different Artists</span>
-                    </div>
-                </div>
-
-                <div class="favorites-list">
-                    <h3>Your Liked Tracks</h3>
-                    <div class="track-list-detailed">
-                        <div class="track-item-detailed">
-                            <div class="track-cover" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                            <div class="track-info-detailed">
-                                <p class="track-name">Midnight Dreams</p>
-                                <p class="artist-name">Luna Echo</p>
-                            </div>
-                            <span class="duration">3:24</span>
-                            <button class="btn-icon">❤️</button>
-                        </div>
-                        <div class="track-item-detailed">
-                            <div class="track-cover" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                            <div class="track-info-detailed">
-                                <p class="track-name">Sunset Memories</p>
-                                <p class="artist-name">Golden Hour</p>
-                            </div>
-                            <span class="duration">4:12</span>
-                            <button class="btn-icon">❤️</button>
-                        </div>
-                        <div class="track-item-detailed">
-                            <div class="track-cover" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                            <div class="track-info-detailed">
-                                <p class="track-name">Electric Paradise</p>
-                                <p class="artist-name">Neon Lights</p>
-                            </div>
-                            <span class="duration">3:45</span>
-                            <button class="btn-icon">❤️</button>
-                        </div>
-                        <div class="track-item-detailed">
-                            <div class="track-cover" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
-                            <div class="track-info-detailed">
-                                <p class="track-name">Ocean Waves</p>
-                                <p class="artist-name">Blue Horizon</p>
-                            </div>
-                            <span class="duration">5:03</span>
-                            <button class="btn-icon">❤️</button>
-                        </div>
-                        <div class="track-item-detailed">
-                            <div class="track-cover" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
-                            <div class="track-info-detailed">
-                                <p class="track-name">Starlight Journey</p>
-                                <p class="artist-name">Cosmic Vibes</p>
-                            </div>
-                            <span class="duration">4:28</span>
-                            <button class="btn-icon">❤️</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SETTINGS PAGE -->
-            <section id="settings" class="page">
-                <div class="page-header">
-                    <h2>Settings ⚙️</h2>
-                    <p>Customize your MusicWeb experience</p>
-                </div>
-
-                <div class="settings-container">
-                    <div class="settings-section">
-                        <h3>Account Settings</h3>
-                        <div class="settings-item">
-                            <label>Username</label>
-                            <input type="text" value="MusicLover_2026" disabled>
-                        </div>
-                        <div class="settings-item">
-                            <label>Email</label>
-                            <input type="email" value="user@musicweb.com" disabled>
-                        </div>
-                        <div class="settings-item">
-                            <label>Member Since</label>
-                            <input type="text" value="January 2024" disabled>
-                        </div>
-                    </div>
-
-                    <div class="settings-section">
-                        <h3>Preferences</h3>
-                        <div class="settings-item">
-                            <label>Audio Quality</label>
-                            <div class="radio-group">
-                                <label class="radio">
-                                    <input type="radio" name="quality" value="128"> Low (128 kbps)
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="quality" value="256" checked> Standard (256 kbps)
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="quality" value="320"> High (320 kbps)
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="settings-item">
-                            <label>Notifications</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="notifications" checked>
-                                <span class="slider"></span>
-                            </div>
-                            <p class="setting-desc">Get notified about new releases and updates</p>
-                        </div>
-
-                        <div class="settings-item">
-                            <label>Auto Play</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="autoplay">
-                                <span class="slider"></span>
-                            </div>
-                            <p class="setting-desc">Continue playing similar songs when playlist ends</p>
-                        </div>
-                    </div>
-
-                    <div class="settings-section">
-                        <h3>Display</h3>
-                        <div class="settings-item">
-                            <label>Dark Mode</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="darkmode" checked>
-                                <span class="slider"></span>
-                            </div>
-                        </div>
-
-                        <div class="settings-item">
-                            <label>Compact View</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="compact">
-                                <span class="slider"></span>
-                            </div>
-                            <p class="setting-desc">Use a more compact layout for lists</p>
-                        </div>
-                    </div>
-
-                    <div class="settings-section">
-                        <h3>Privacy & Security</h3>
-                        <div class="settings-item">
-                            <label>Private Account</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="private">
-                                <span class="slider"></span>
-                            </div>
-                            <p class="setting-desc">Only people you approve can see your playlists</p>
-                        </div>
-
-                        <div class="settings-item">
-                            <label>Show Activity</label>
-                            <div class="toggle-switch">
-                                <input type="checkbox" id="activity" checked>
-                                <span class="slider"></span>
-                            </div>
-                            <p class="setting-desc">Let friends see what you're listening to</p>
-                        </div>
-                    </div>
-
-                    <div class="settings-section danger-section">
-                        <h3>Danger Zone</h3>
-                        <button class="btn-danger">Reset All Settings</button>
-                        <button class="btn-danger">Clear Cache</button>
-                    </div>
+                    </article>
                 </div>
             </section>
         </main>
